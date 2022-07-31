@@ -1,0 +1,18 @@
+<% if flash[:notice] %>
+<%= flash[:notice] %>
+<% end %>
+
+<% @student.each do |stu| %>
+
+<p>
+<%=  stu.number %>
+<%=  stu.name %>
+<%=  stu.mail  %>
+
+<%= link_to '削除', "/students/#{stu.id}", method: :delete %>
+<%= link_to '表示', "/students/#{stu.id}" %>
+<%= link_to '編集', "/students/#{stu.id}/edit" %>
+</p>
+<% end %>
+
+<p><%= link_to '新規追加', '/students/new' %></p>
