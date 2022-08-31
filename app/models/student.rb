@@ -5,6 +5,6 @@ class Student < ApplicationRecord
     validates :mail, presence: true
     validates :mail, format: { with: /\A\d{2}[1]{3}[1-5]\d{4}[a-z]+@+ed.fuk.kindai.ac.jp$\z/ }
   
-    
+    c
     
 end

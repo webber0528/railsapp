@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+cRails.application.routes.draw do
   get 'students/index', to: 'students#index'
   root 'students#index'
   get 'students/new', to: 'students#new'
